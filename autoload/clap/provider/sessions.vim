@@ -1,12 +1,12 @@
 let g:clap_session_dir = get(g:, 'clap_session_dir', '~/.clap_session')
 
 function! s:source() abort
-  let filelist = glob(g:clap_session_dir.'/*')
+  let filelist = glob(g:clap_session_dir..'/*')
   return split(filelist)
 endfunc
 
 function! s:sink(str) abort
-  execute 'source '.a:str
+  execute 'source '..a:str
 endfunction
 
 let s:sessions = {}
