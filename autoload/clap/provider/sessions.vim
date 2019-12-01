@@ -1,4 +1,4 @@
-let g:clap_session_dir = get(g:, 'clap_session_dir', '~/.clap_session')
+let g:clap_session_dir = get(g:, 'clap_session_dir', '~/.vimsessions')
 
 function! s:source() abort
   let filelist = glob(g:clap_session_dir..'/*')
