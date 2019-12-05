@@ -1,3 +1,6 @@
+" Author: hokorobi <hokorobi.hokorobi@gmail.com>
+" Description: List session files
+
 let g:clap_session_dir = get(g:, 'clap_session_dir', '~/.vimsessions')
 
 function! s:source() abort
